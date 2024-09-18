@@ -14,7 +14,7 @@ public struct FeedPost: Codable, Identifiable {
     public let url: URL
     public let thumbnailUrl: URL
     
-    init(albumId: Int, id: Int, title: String, url: URL, thumbnailUrl: URL) {
+    public init(albumId: Int, id: Int, title: String, url: URL, thumbnailUrl: URL) {
         self.albumId = albumId
         self.id = id
         self.title = title

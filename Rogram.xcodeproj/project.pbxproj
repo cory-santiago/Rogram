@@ -16,6 +16,8 @@
 		6627CE8E2C98C83A00FAF18C /* RogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627CE8D2C98C83A00FAF18C /* RogramUITests.swift */; };
 		6627CE902C98C83A00FAF18C /* RogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6627CE8F2C98C83A00FAF18C /* RogramUITestsLaunchTests.swift */; };
 		66E006F32C9A170D00298AF9 /* RogramAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 66E006F22C9A170D00298AF9 /* RogramAPI */; };
+		66E006F52C9A3F2C00298AF9 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E006F42C9A3F2C00298AF9 /* PostView.swift */; };
+		66E006F72C9A45BE00298AF9 /* DetailedPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E006F62C9A45BE00298AF9 /* DetailedPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		6627CE892C98C83A00FAF18C /* RogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6627CE8D2C98C83A00FAF18C /* RogramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITests.swift; sourceTree = "<group>"; };
 		6627CE8F2C98C83A00FAF18C /* RogramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66E006F42C9A3F2C00298AF9 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		66E006F62C9A45BE00298AF9 /* DetailedPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				6627CE702C98C83700FAF18C /* RogramApp.swift */,
 				6627CE722C98C83700FAF18C /* ContentView.swift */,
 				6627CE742C98C83700FAF18C /* Item.swift */,
+				66E006F42C9A3F2C00298AF9 /* PostView.swift */,
+				66E006F62C9A45BE00298AF9 /* DetailedPostView.swift */,
 				6627CE762C98C83900FAF18C /* Assets.xcassets */,
 				6627CE782C98C83900FAF18C /* Preview Content */,
 			);
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E006F72C9A45BE00298AF9 /* DetailedPostView.swift in Sources */,
 				6627CE732C98C83700FAF18C /* ContentView.swift in Sources */,
 				6627CE752C98C83700FAF18C /* Item.swift in Sources */,
+				66E006F52C9A3F2C00298AF9 /* PostView.swift in Sources */,
 				6627CE712C98C83700FAF18C /* RogramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
