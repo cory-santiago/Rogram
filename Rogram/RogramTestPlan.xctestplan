@@ -13,7 +13,20 @@
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:Rogram.xcodeproj",
+        "identifier" : "6627CE7E2C98C83A00FAF18C",
+        "name" : "RogramTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:RogramAPI",
+        "identifier" : "RogramAPITests",
+        "name" : "RogramAPITests"
+      }
+    }
   ],
   "version" : 1
 }

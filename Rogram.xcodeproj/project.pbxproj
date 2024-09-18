@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		661348892C9B4A9300061FCB /* RogramTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RogramTestPlan.xctestplan; sourceTree = "<group>"; };
+		661DADA92C9B4F8600961ECC /* RogramAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RogramAPI; sourceTree = "<group>"; };
 		6627CE6D2C98C83700FAF18C /* Rogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6627CE702C98C83700FAF18C /* RogramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogramApp.swift; sourceTree = "<group>"; };
 		6627CE722C98C83700FAF18C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,13 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661DADAA2C9B4FE500961ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6627CE642C98C83700FAF18C = {
 			isa = PBXGroup;
 			children = (
+				661DADA92C9B4F8600961ECC /* RogramAPI */,
 				6627CE6F2C98C83700FAF18C /* Rogram */,
 				6627CE822C98C83A00FAF18C /* RogramTests */,
 				6627CE8C2C98C83A00FAF18C /* RogramUITests */,
 				6627CE6E2C98C83700FAF18C /* Products */,
+				661DADAA2C9B4FE500961ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,7 +239,6 @@
 			);
 			mainGroup = 6627CE642C98C83700FAF18C;
 			packageReferences = (
-				66E006F12C9A170D00298AF9 /* XCLocalSwiftPackageReference "RogramAPI" */,
 			);
 			productRefGroup = 6627CE6E2C98C83700FAF18C /* Products */;
 			projectDirPath = "";
@@ -600,13 +609,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		66E006F12C9A170D00298AF9 /* XCLocalSwiftPackageReference "RogramAPI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = RogramAPI;
-		};
-/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		66E006F22C9A170D00298AF9 /* RogramAPI */ = {
