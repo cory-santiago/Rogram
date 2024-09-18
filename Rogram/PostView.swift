@@ -33,7 +33,18 @@ struct PostView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity, maxHeight: 400)
                 case .failure:
-                    Image(systemName: "photo")
+                    // Would likely want to limit this retry logic
+                    AsyncImage(url: shouldUseFullImage ? post.url : post.thumbnailUrl) { phase in
+                        if let image = phase.image {
+                            image
+                                .resizable()
+                                .scaledToFill()
+                        } else{
+                            Text("Failed to fetch image")
+                                .foregroundColor(.red)
+                                .bold()
+                        }
+                    }
                 @unknown default:
                     EmptyView()
                 }

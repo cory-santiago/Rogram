@@ -1,0 +1,19 @@
+{
+  "configurations" : [
+    {
+      "id" : "79AC9C13-C619-4DCD-9D1E-97DAFA791902",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

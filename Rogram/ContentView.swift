@@ -7,11 +7,14 @@
 
 import RogramAPI
 import SwiftUI
-import SwiftData
 
+/* 
+ Potential Improvement: Move toward a pattern like the composable architecture to make the states,
+ actions, and effects
+ 
+ Alternatively move to a viewmodel setup
+ */
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     @State private var posts: [FeedPost] = []
     @State private var showDetailedView = false
     @State private var selectedPost: FeedPost?
@@ -35,12 +38,14 @@ struct ContentView: View {
                 .padding()
             }
             .navigationDestination(isPresented: $showDetailedView) {
+                // Improvement: Add navigation path to support deep links
                 if let post = selectedPost {
                     DetailedPostView(post: post)
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .principal) { Text("Ro").foregroundColor(.black).font(.largeTitle)
+                ToolbarItem(placement: .principal) { 
+                    Text("Ro").foregroundColor(.black).font(.largeTitle)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -64,5 +69,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView(api: RogramNetworking())
-        .modelContainer(for: Item.self, inMemory: true)
 }

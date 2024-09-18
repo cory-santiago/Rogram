@@ -9,7 +9,6 @@ final class RogramAPITests: XCTestCase {
     }
     
     func testCreationOfFeedPost() {
-        // let post = try? JSONDecoder().decode(FeedPost.self, from: Data)
         let feedpost = FeedPost(albumId: 1, id: 1, title: "Title", url: URL(filePath: "test/path"), thumbnailUrl: URL(filePath: "test/path/thumb"))
         XCTAssert(feedpost.albumId == 1)
         XCTAssert(feedpost.id == 1)
